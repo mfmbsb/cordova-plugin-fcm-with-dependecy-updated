@@ -19,6 +19,7 @@ buildscript {
         }
         // Override config with project values if available
         ANDROID_GRADLE_TOOLS_VERSION = rootProject.hasProperty('ANDROID_GRADLE_TOOLS_VERSION') ? rootProject.ext.ANDROID_GRADLE_TOOLS_VERSION : ANDROID_GRADLE_TOOLS_VERSION
+        console.log('gradlever: [',ANDROID_GRADLE_TOOLS_VERSION,']')
         ext.gradleNumberVersion = 7.1 //ANDROID_GRADLE_TOOLS_VERSION.substring(0, ANDROID_GRADLE_TOOLS_VERSION.lastIndexOf(".")).toFloat()
     }
     repositories {
